@@ -264,16 +264,11 @@ void cpufreq_notify_transition(struct cpufreq_freqs *freqs, unsigned int state);
 void cpufreq_notify_utilization(struct cpufreq_policy *policy,
 		unsigned int load);
 
-#ifdef CONFIG_MSM_CPUFREQ_LIMITER
-extern unsigned int limited_max_freq;
-#endif
 
 static inline void cpufreq_verify_within_limits(struct cpufreq_policy *policy, unsigned int min, unsigned int max)
 {
 
-#ifdef CONFIG_MSM_CPUFREQ_LIMITER
-	max = min(limited_max_freq, max);
-#endif
+
 
 	if (policy->min < min)
 		policy->min = min;
@@ -372,7 +367,7 @@ enum {
 	BOOT_CPU = 0,
 };
 
-#define MAX_FREQ_LIMIT limited_max_freq;
+
 
 /*********************************************************************
  *                       CPUFREQ DEFAULT GOVERNOR                    *
