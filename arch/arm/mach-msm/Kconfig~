@@ -1970,12 +1970,6 @@ config MSM_CPU_FREQ_MIN
 	default 245760
 
 
-config MSM_LIMITER
-	bool "MSM Frequency Limiter Driver"
-	default y
-	help
-	  The MSM Frequency Limiter Driver controls max frequency limit for each CPU
-	  to desired value on suspend/resume
 
 
 config CPU_OC
