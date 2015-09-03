@@ -10,8 +10,8 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#ifndef __MACH_CPUFREQ_H
-#define __MACH_CPUFREQ_H
+#ifndef __ARCH_ARM_MACH_MSM_MACH_CPUFREQ_H
+#define __ARCH_ARM_MACH_MSM_MACH_CPUFREQ_H
 
 #if defined(CONFIG_DEVFREQ_GOV_MSM_CPUFREQ)
 extern int devfreq_msm_cpufreq_update_bw(void);
