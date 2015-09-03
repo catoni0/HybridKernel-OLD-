@@ -40,17 +40,3 @@ static inline int msm_cpufreq_set_freq_limits(
 #endif
 
 #endif /* __ARCH_ARM_MACH_MSM_MACH_CPUFREQ_H */
-
-#if defined(CONFIG_DEVFREQ_GOV_MSM_CPUFREQ)
-extern int devfreq_msm_cpufreq_update_bw(void);
-extern int register_devfreq_msm_cpufreq(void);
-#else
-static int devfreq_msm_cpufreq_update_bw(void)
-{
-	return 0;
-}
-static int register_devfreq_msm_cpufreq(void)
-{
-	return 0;
-}
-#endif
