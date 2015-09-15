@@ -1,0 +1,6 @@
+__crc_pil_q6v5_make_proxy_votes = 0x7a55ca46 ;
+__crc_pil_q6v5_remove_proxy_votes = 0x79a64f4c ;
+__crc_pil_q6v5_halt_axi_port = 0x1b189432 ;
+__crc_pil_q6v5_shutdown = 0x9148169b ;
+__crc_pil_q6v5_reset = 0x7b3c7950 ;
+__crc_pil_q6v5_init = 0x94b74721 ;
